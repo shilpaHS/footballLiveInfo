@@ -13,7 +13,7 @@
             <tr ng-repeat="comp in compititions">
 
                 <td><a href="#/league/{{comp.id}}"><span data-tooltip data-placement="bottom" data-title="Click here to get league">{{comp.league}}</span></a></td>
-                <td><a href="#/teams/{{comp.id}}"><span data-tooltip data-placement="bottom" data-title="Click here to get Teams">{{comp.numberOfTeams}}</span></a></td>
+                <td>{{comp.numberOfTeams}}</td>
                 <td>{{comp.caption}}</td>
                 <td>{{comp.year}}</td>
                 <td>{{comp.currentMatchday}}</td>

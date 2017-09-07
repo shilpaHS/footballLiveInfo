@@ -3,11 +3,11 @@ angular.module('myApp')
         var id = $routeParams.id;
         getTeams(id)
         function getTeams(id) {
-                        footballdataFactory.getTeamsCompitions({
+                        footballdataFactory.getPlayersByTeam({
                             apiKey: '2ac17f355da94c879749226663dad0a4',
                             id:id, 
                         }).then(function (_data) {
-                            $scope.teams = _data.data.teams;
+                            $scope.players = _data.data.players;
                         }).catch(function (_data) {
                             //on error
                         });

@@ -1,11 +1,18 @@
 <div class="panel">
     <table class="table table-striped">
         <tr>
-            <th>Name</th>
+            <th>Players Name</th>
+            <th>Position</th>
+            <th>Jersey Number</th>
+            <th>Nationality</th>
+            
         </tr>
         <tbody>
-            <tr ng-repeat="team in teams">
+            <tr ng-repeat="team in players">
                 <td>{{team.name}}</td>
+                <td>{{team.position}}</td>
+                <td>{{team.jerseyNumber}}</td>
+                <td>{{team.nationality}}</td>                
             </tr>
         </tbody>
     </table>
