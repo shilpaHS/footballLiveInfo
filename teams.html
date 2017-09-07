@@ -1,19 +1,39 @@
 <div class="panel">
-    <table class="table table-striped">
-        <tr>
-            <th>Players Name</th>
-            <th>Position</th>
-            <th>Jersey Number</th>
-            <th>Nationality</th>
-            
-        </tr>
-        <tbody>
-            <tr ng-repeat="team in players">
-                <td>{{team.name}}</td>
-                <td>{{team.position}}</td>
-                <td>{{team.jerseyNumber}}</td>
-                <td>{{team.nationality}}</td>                
-            </tr>
-        </tbody>
-    </table>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="panel panel-success rounded shadow">
+                <div class="panel-heading">
+                  Fixtures
+                </div>
+                <div class="panel-body no-padding">
+                    <div ng-repeat="fixture in fixtures | limitTo:-5 | orderBy:'date':true">
+                           {{fixture.homeTeamName}} <span class="count">{{fixture.duration}}</span> {{fixture.awayTeamName}}
+                            <div class="line"></div>
+                        </div>
+                   
+                </div>
+            </div>
+           
+        </div>
+        <div class="col-md-12">
+            <table class="table table-striped">
+                <tr>
+                    <th>Players Name</th>
+                    <th>Position</th>
+                    <th>Jersey Number</th>
+                    <th>Nationality</th>
+
+                </tr>
+                <tbody>
+                    <tr ng-repeat="team in players">
+                        <td>{{team.name}}</td>
+                        <td>{{team.position}}</td>
+                        <td>{{team.jerseyNumber}}</td>
+                        <td>{{team.nationality}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
 </div>

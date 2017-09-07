@@ -2,3 +2,25 @@
 .help{
     cursor: help;
 }
+.line{
+        height: 2px;
+    margin: 10px 0px;
+    font-size: 0px;
+    overflow: hidden;
+    background-color: transparent;
+    border-width: 1px 0px 0px;
+    border-top: 1px solid #DDD;
+}
+.count{
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+    background-color: #906094;
+}
