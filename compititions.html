@@ -1,0 +1,25 @@
+<div class="panel">
+    <table class="table table-striped">
+        <tr>
+            <th>League</th>
+            <th>Number of Teams</th>
+            <th>Caption</th>
+            <th>Year</th>
+            <th>Current Matach</th>
+            <th  class="help"><span data-tooltip data-placement="bottom" data-title="Number of Matches a Day">NMD</span></th>
+            <th>Number of Games</th>
+        </tr>
+        <tbody>
+            <tr ng-repeat="comp in compititions">
+
+                <td><a href="#/league/{{comp.id}}"><span data-tooltip data-placement="bottom" data-title="Click here to get league">{{comp.league}}</span></a></td>
+                <td><a href="#/teams/{{comp.id}}"><span data-tooltip data-placement="bottom" data-title="Click here to get Teams">{{comp.numberOfTeams}}</span></a></td>
+                <td>{{comp.caption}}</td>
+                <td>{{comp.year}}</td>
+                <td>{{comp.currentMatchday}}</td>
+                <td>{{comp.numberOfMatchdays}}</td>
+                <td>{{comp.numberOfGames}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,14 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "angular football",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "shilpa",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.4"
+  }
+}

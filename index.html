@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+  <meta charset="utf-8" />
+  <title>AngularJS Plunker</title>
+
+  <script>document.write('<base href="' + document.location + '" />');</script>
+  <link href="bower_components/bootstrap-css/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/bootstrap-css/js/bootstrap.min.js"></script>
+  <script data-require="angular.js@1.2.x" src="https://code.angularjs.org/1.2.21/angular.js" data-semver="1.2.21"></script>
+  <script data-require="angular-route@1.2.17" data-semver="1.2.17" src="http://code.angularjs.org/1.2.17/angular-route.js"></script>
+  <script src="app.js"></script>
+  <script src="js/compitionsCtrl.js"></script>
+  <script src="js/leagueController.js"></script>
+  <script src="js/teamsController.js"></script>
+
+  <script src="bower_components/angular-footballdata-api-factory/dist/angular-footballdata-api-factory.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Football Live Data</h1>
+  </header>
+
+  <div class="panel panel-default">
+    <div class="panel-heading"><h2><a href="#/">Compitions</a></h2></div>
+    <div class="panel-body">
+      <div class="content">
+        <div ng-view></div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
